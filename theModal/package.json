@@ -1,0 +1,23 @@
+{
+  "name": "the-modal",
+  "version": "0.1.7",
+  "description": "The Modal =========",
+  "main": "jquery.the-modal.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samdark/the-modal.git"
+  },
+  "author": "samdark",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/samdark/the-modal/issues"
+  },
+  "homepage": "https://github.com/samdark/the-modal#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jquery",
+    "modal"
+  ]
+}

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" type="image/png" href="img/logo.png">
+        <title> Minx Kitchen </title>
+    
+        <!-- Bootstrap CSS JS -->
+        <link rel="stylesheet" href="bootstrap.css" type="text/css">
+        <script src="bootstrap.js"></script>
+
+        <!-- MY CSS JS -->
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <!-- <script src="myjavascript.js"></script> -->
+
+        <!-- Skippr CSS JS -->
+        <link rel="stylesheet" type="text/css" href="skippr/dist/skippr.css" />
+        <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="skippr/dist/skippr.js"></script>
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="fontawesome-free-5.10.2-web/css/all.css" type="text/css">
+        <!-- <script src="aria_modal/jquery-accessible-modal-window-aria.js"></script>
+        <link rel="stylesheet" href="https://rocssti.net/downloads/rocssti-fr.css" /> -->
+
+        <link rel="stylesheet" href="theModal/the-modal.css" type="text/css">
+        <script src="theModal/jquery.the-modal.js"></script>
+        <link rel="stylesheet" type="text/css" href="theModal/demo/demo-modals.css" media="all">
+    </head>
+
+    <body>
+        <!--  NAVIGATION BAR  -->
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: darkred;">
+
+            <a class="navbar-brand" href="index.html" style="padding-left: 15px;"> MINX KITCHEN </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navigation-bar">
+                <ul class="navbar-nav mr-auto"> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#food"> FOOD </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#beverage"> BEVERAGE </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#snack"> SNACK </a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <div id="carouselcontainer">
+            <div id="theTarget">
+                <div id="carousel1" style="background-image: url(img/food/chickenbake.jpg)" onclick="window.location='#food';"> 
+                    <h1> DISCOUNT! Only Rp.20.000 </h1>
+                </div>
+                <div id="carousel2" style="background-image: url(img/drink/teacherry.jpg)" onclick="window.location='#beverage';">
+                    <h1> Today Promo! Only Rp.10.000 </h1>
+                </div>
+                <div id="carousel3" style="background-image: url(img/snack/bun.jpg)" onclick="window.location='#snack';">
+                    <h1> Deals of The Day! Rp.10.000 for this item</h1>
+                </div>
+            </div>    
+        </div>
+
+        <div id="food" style="margin-top: 590px;"> 
+
+            <h2 style="background-color: darkred; padding: 30px; color: white; text-align: center; margin-bottom: 50px;"> FOOD </h2>
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-12" style="position: relative;"> <a href="#" class="trigger1"> 
+                        <img src="img/food/chicken.jpg" class="img-fluid img-thumbnail" id="chicken" onclick="detail()"> </a>
+                        <div class="bottom-right">
+                            <i class="fas fa-heart" title="Favorite"> </i>
+                            <i class="fas fa-thumbs-up" title="Recommend"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12"> <a href="#" class="trigger2">
+                        <img src="img/food/chickenbake.jpg" class="img-fluid img-thumbnail"> </a>
+                        <div class="bottom-right">
+                            <i class="fas fa-heart" title="Favorite"></i>
+                            <i class="fas fa-thumbs-up" title="Recommend"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12"> 
+                        <img src="img/food/riceroll.jpg" class="img-fluid img-thumbnail"> 
+                        <div class="bottom-right">
+                            <i class="fas fa-heart" title="Favorite"></i>
+                            <i class="fas fa-thumbs-up" title="Recommend"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-12"> 
+                        <img src="img/food/satay.jpg" class="img-fluid img-thumbnail"> 
+                        <div class="bottom-right">
+                            <i class="fas fa-heart" title="Favorite"> </i>
+                            <i class="fas fa-thumbs-up" title="Recommend"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12"> 
+                        <img src="img/food/seafood.jpg" class="img-fluid img-thumbnail"> 
+                        <div class="bottom-right">
+                            <i class="fas fa-heart" title="Favorite"> </i>
+                            <i class="fas fa-thumbs-up" title="Recommend"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12"> 
+                        <img src="img/food/soup.jpg" class="img-fluid img-thumbnail"> 
+                        <div class="bottom-right">
+                            <i class="fas fa-heart" title="Favorite"> </i>
+                            <i class="fas fa-thumbs-up" title="Recommend"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12"> 
+                        <img src="img/food/soup2.jpg" class="img-fluid img-thumbnail"> 
+                        <div class="bottom-right">
+                            <i class="fas fa-heart" title="Favorite"> </i>
+                            <i class="fas fa-thumbs-up" title="Recommend"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12"> 
+                        <img src="img/food/steak.jpg" class="img-fluid img-thumbnail"> 
+                        <div class="bottom-right">
+                            <i class="fas fa-heart" title="Favorite"> </i>
+                            <i class="fas fa-thumbs-up" title="Recommend"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12"> 
+                        <img src="img/food/sushi.jpg" class="img-fluid img-thumbnail"> 
+                        <div class="bottom-right">
+                            <i class="fas fa-heart" title="Favorite"> </i>
+                            <i class="fas fa-thumbs-up" title="Recommend"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12"> 
+                        <img src="img/food/turkey.jpg" class="img-fluid img-thumbnail"> 
+                        <div class="bottom-right">
+                            <i class="fas fa-heart" title="Favorite"> </i>
+                            <i class="fas fa-thumbs-up" title="Recommend"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="beverage" style="margin-top: 50px;"> 
+
+            <h2 style="background-color: darkred; padding: 30px; color: white; text-align: center; margin-bottom: 50px;"> BEVERAGE </h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12"> <a href="#" class="trigger11">
+                        <img src="img/drink/blacktea.jpg" class="img-fluid img-thumbnail"> </a>
+                        <div class="bottom-right">
+                            <i class="fas fa-heart" title="Favorite"> </i>
+                            <i class="fas fa-thumbs-up" title="Recommend"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12"> 
+                        <img src="img/drink/chocolate.jpg" class="img-fluid img-thumbnail"> 
+                        <div class="bottom-right">
+                            <i class="fas fa-heart" title="Favorite"> </i>
+                            <i class="fas fa-thumbs-up" title="Recommend"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12"> 
+                        <img src="img/drink/coffee.jpg" class="img-fluid img-thumbnail"> 
+                        <div class="bottom-right">
+                            <i class="fas fa-heart" title="Favorite"> </i>
+                            <i class="fas fa-thumbs-up" title="Recommend"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12"> 
+                        <img src="img/drink/coffee2.jpg" class="img-fluid img-thumbnail"> 
+                        <div class="bottom-right">
+                            <i class="fas fa-heart" title="Favorite"> </i>
+                            <i class="fas fa-thumbs-up" title="Recommend"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12"> 
+                        <img src="img/drink/lemonade.jpg" class="img-fluid img-thumbnail">
+                        <div class="bottom-right">
+                            <i class="fas fa-heart" title="Favorite"> </i>
+                            <i class="fas fa-thumbs-up" title="Recommend"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12"> 
+                        <img src="img/drink/milkshake.jpg" class="img-fluid img-thumbnail"> 
+                        <div class="bottom-right">
+                            <i class="fas fa-heart" title="Favorite"> </i>
+                            <i class="fas fa-thumbs-up" title="Recommend"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12"> 
+                        <img src="img/drink/orange.jpg" class="img-fluid img-thumbnail">
+                        <div class="bottom-right">
+                            <i class="fas fa-heart" title="Favorite"> </i>
+                            <i class="fas fa-thumbs-up" title="Recommend"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12"> 
+                        <img src="img/drink/tea.jpg" class="img-fluid img-thumbnail"> 
+                        <div class="bottom-right">
+                            <i class="fas fa-heart" title="Favorite"> </i>
+                            <i class="fas fa-thumbs-up" title="Recommend"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12"> 
+                        <img src="img/drink/teaberry.jpg" class="img-fluid img-thumbnail"> 
+                        <div class="bottom-right">
+                            <i class="fas fa-heart" title="Favorite"> </i>
+                            <i class="fas fa-thumbs-up" title="Recommend"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12"> 
+                        <img src="img/drink/teacherry.jpg" class="img-fluid img-thumbnail"> 
+                        <div class="bottom-right">
+                            <i class="fas fa-heart" title="Favorite"> </i>
+                            <i class="fas fa-thumbs-up" title="Recommend"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="snack" style="margin-top: 50px;"> 
+
+            <h2 style="background-color: darkred; padding: 30px; color: white; text-align: center; margin-bottom: 50px;"> SNACK </h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12"> 
+                        <img src="img/snack/bun.jpg" class="img-fluid img-thumbnail"> 
+                        <div class="bottom-right">
+                            <i class="fas fa-heart" title="Favorite"> </i>
+                            <i class="fas fa-thumbs-up" title="Recommend"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12"> 
+                        <img src="img/snack/cake.jpg" class="img-fluid img-thumbnail"> 
+                        <div class="bottom-right">
+                            <i class="fas fa-heart" title="Favorite"> </i>
+                            <i class="fas fa-thumbs-up" title="Recommend"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12"> 
+                        <img src="img/snack/cupcake.jpg" class="img-fluid img-thumbnail"> 
+                        <div class="bottom-right">
+                            <i class="fas fa-heart" title="Favorite"> </i>
+                            <i class="fas fa-thumbs-up" title="Recommend"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12"> 
+                        <img src="img/snack/dumpling.jpg" class="img-fluid img-thumbnail"> 
+                        <div class="bottom-right">
+                            <i class="fas fa-heart" title="Favorite"> </i>
+                            <i class="fas fa-thumbs-up" title="Recommend"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12"> 
+                        <img src="img/snack/food6.jpg" class="img-fluid img-thumbnail"> 
+                        <div class="bottom-right">
+                            <i class="fas fa-heart" title="Favorite"> </i>
+                            <i class="fas fa-thumbs-up" title="Recommend"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12"> 
+                        <img src="img/snack/food7.jpg" class="img-fluid img-thumbnail"> 
+                        <div class="bottom-right">
+                            <i class="fas fa-heart" title="Favorite"> </i>
+                            <i class="fas fa-thumbs-up" title="Recommend"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12"> 
+                        <img src="img/snack/icecream.jpg" class="img-fluid img-thumbnail">
+                        <div class="bottom-right">
+                            <i class="fas fa-heart" title="Favorite"> </i>
+                            <i class="fas fa-thumbs-up" title="Recommend"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12"> 
+                        <img src="img/snack/icecream2.jpg" class="img-fluid img-thumbnail"> 
+                        <div class="bottom-right">
+                            <i class="fas fa-heart" title="Favorite"> </i>
+                            <i class="fas fa-thumbs-up" title="Recommend"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12"> 
+                        <img src="img/snack/muffin.jpg" class="img-fluid img-thumbnail"> 
+                        <div class="bottom-right">
+                            <i class="fas fa-heart" title="Favorite"> </i>
+                            <i class="fas fa-thumbs-up" title="Recommend"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12"> 
+                        <img src="img/snack/onigiri.jpg" class="img-fluid img-thumbnail"> 
+                        <div class="bottom-right">
+                            <i class="fas fa-heart" title="Favorite"> </i>
+                            <i class="fas fa-thumbs-up" title="Recommend"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div id="nota" style="display: none;">
+                <h2> NOTA </h2>
+                <div style="margin-top: 30px;">
+                    <h4> Menu </h4>
+                    <h4 class="notaqty"> Quantity </h4>
+                    <h4 style="float: right;"> Total Cost </h4>
+                </div>
+                <div id="menu" style="margin-top: 30px;"> </div>
+                <div id="totalharganota" style="margin-top: 30px;"> </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 50px; padding: 20px; background-color: darkred; color: white; text-align: center;">
+            <h6 style="padding-bottom: 0px;"> Created by Angelika Justine &copy; 2019 </h6>
+        </div>
+
+        <div class="modal" id="modal1" style="display: none;">
+            <a href="#" class="close">&times;</a>
+    
+            <h1 style="text-align: center;"> Ayam Kecap </h1>
+    
+            <div style="position: relative;" class="imgModal"> 
+                <img src="img/food/chicken.jpg" class="img-fluid img-thumbnail">
+                <div class="bottom-right" style="margin-right: -10px;">
+                    <i class="fas fa-heart" title="Favorite"></i>
+                    <i class="fas fa-thumbs-up" title="Recommend"></i>
+                </div>
+            </div>
+            <p style="text-align: justify; margin-top: 20px;"> Ayam kecap or ayam masak kicap is a Maritime Southeast Asia 
+                chicken dish poached or simmered in sweet soy sauce (kecap manis or kicap lemak manis) commonly 
+                found in Indonesia and Malaysia.</p>
+
+            
+            <h4> 
+                <i class="fas fa-star" style="color: gold;"></i> 
+                <i class="fas fa-star" style="color: gold;"></i>
+                <i class="fas fa-star" style="color: gold;"></i>
+                <i class="fas fa-star" style="color: gold;"></i>
+                <i class="fas fa-star-half-alt" style="color: gold;"></i>
+                <span style="float: right;"> Rp. 30.000 </span> 
+            </h4>
+            
+            <p style="display: inline-block; padding-right: 20px;"> Quatity </p>
+            <button class="btn btn-outline-success" id="minusqty1"> - </button> 
+            <p style="display: inline-block; padding: 20px;" id="qty1"> 0 </p> 
+            <button class="btn btn-outline-success" id="plusqty1"> + </button> 
+            <p style="float: right; display: inline-block; padding: 20px 0px;" id="total1"> Rp.0 </p>
+
+            <div> <button class="btn btn-success btn-lg addButton" > Add to Cart </button> </div>
+            
+
+        </div>
+
+        <div class="modal" id="modal2" style="display: none">
+            <a href="#" class="close">&times;</a>
+    
+            <h1 style="text-align: center;"> Ayam Bakar </h1>
+    
+            <div style="position: relative;" class="imgModal"> 
+                <img src="img/food/chickenbake.jpg" class="img-fluid img-thumbnail">
+                <div class="bottom-right" style="margin-right: -10px;">
+                    <i class="fas fa-heart" title="Favorite"></i>
+                    <i class="fas fa-thumbs-up" title="Recommend"></i>
+                </div>
+            </div>
+            <p style="text-align: justify; margin-top: 20px;"> Ayam bakar dimasak dengan cara dibakar langsung di atas bara api setelah dibumbui,
+                Dengan dibakar, bumbu akan meresap hingga ke dalam daging. Citarasanya umumnya gurih, manis, dan pedas.</p>
+
+            <h4> 
+                <i class="fas fa-star" style="color: gold;"></i> 
+                <i class="fas fa-star" style="color: gold;"></i>
+                <i class="fas fa-star" style="color: gold;"></i>
+                <i class="fas fa-star" style="color: gold;"></i>
+                <i class="fas fa-star" style="color: gold;"></i>
+                <span style="float: right;"> Rp. 40.000 </span> 
+            </h4>
+            
+            <p style="display: inline-block; padding-right: 20px;"> Quatity </p>
+            <button class="btn btn-outline-success" id="minusqty2"> - </button> 
+            <p style="display: inline-block; padding: 20px;" id="qty2"> 0 </p> 
+            <button class="btn btn-outline-success" id="plusqty2"> + </button>
+            <p style="float: right; display: inline-block; padding: 20px 0px;" id="total2"> Rp.0 </p> 
+
+            <div> <button class="btn btn-success btn-lg addButton"> Add to Cart </button> </div>
+
+        </div>
+
+        <div class="modal" id="modal11" style="display: none">
+            <a href="#" class="close">&times;</a>
+    
+            <h1 style="text-align: center;"> Black Tea </h1>
+    
+            <div style="position: relative;" class="imgModal"> 
+                <img src="img/drink/blacktea.jpg" class="img-fluid img-thumbnail">
+                <div class="bottom-right" style="margin-right: -10px;">
+                    <i class="fas fa-heart" title="Favorite"></i>
+                    <i class="fas fa-thumbs-up" title="Recommend"></i>
+                </div>
+            </div>
+            <p style="text-align: justify; margin-top: 20px;"> Black tea is a type of tea that is more oxidized than 
+                oolong, green, and white teas. Black tea is generally stronger in flavour. 
+                All four types are made from leaves of Camellia sinensis.</p>
+
+            <h4> 
+                <i class="fas fa-star" style="color: gold;"></i> 
+                <i class="fas fa-star" style="color: gold;"></i>
+                <i class="fas fa-star" style="color: gold;"></i>
+                <i class="fas fa-star" style="color: gold;"></i>
+                <i class="fas fa-star" style="color: gold;"></i>
+                <span style="float: right;"> Rp. 40.000 </span> 
+            </h4>
+            
+            <p style="display: inline-block; padding-right: 20px;"> Quatity </p>
+            <button class="btn btn-outline-success" id="minusqty11"> - </button> 
+            <p style="display: inline-block; padding: 20px;" id="qty11"> 0 </p> 
+            <button class="btn btn-outline-success" id="plusqty11"> + </button>
+            <p style="float: right; display: inline-block; padding: 20px 0px;" id="total11"> Rp.0 </p> 
+
+            <div> <button class="btn btn-success btn-lg addButton"> Add to Cart </button> </div>
+
+        </div>
+
+        <script src="myjavascript.js"> </script>
+
+    </body>
+
+</html>
