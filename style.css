@@ -119,6 +119,14 @@ html, body{
     text-align: center;
 }
 
+#nota h3{
+    color: black;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-size: 20px;
+    /* text-align: center; */
+}
+
 #nota h4{
     color: darkred;
     font-weight: bold;
@@ -130,4 +138,9 @@ html, body{
     left: 50%;
     -webkit-transform: translate(-50%, 0%);
     transform: translate(-50%, 0%);
+}
+
+#menu h4{
+    font-size: 20px;
+    color: black;
 }
